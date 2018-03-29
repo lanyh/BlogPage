@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!欢迎!</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script language="JavaScript" src="WelcomeJS.js"></script>
+</head>
+<body id="Body">
+    <div class="WelcomeText" id="Typing"></div>
+    <div class="WelcomeText" id="TypingChinese"></div>
+    <button id="FinishReadingBtn"><a href="javascript:">I've read all of it<br>我已经读完了</a>
+    </button>
+<div id="ConfirmCheckDiv">
+    <a id="ConfirmText">Is this your first time here? <br/>你是第一次来这里吗?</a>
+    <button id="ConfirmNewBtn"><a id="NewText">I'm new!(Yes)</a></button>
+    <button id="ConfirmNotNewBtn"><a id="OldText"> I'm old!(NO)</a></button>
+</div>
+<div id="LoginCheckDiv">
+    <form id="LoginForm" action="" method="post">
+        <h1>Welcome</h1>
+        <fieldset id="InputSet">
+            用户名 <input id="Username" name="Username" type="text" placeholder="请输入用户名"/><br/><br/>
+            密&nbsp&nbsp码 <input id="Password" name="Password" type="Password" placeholder="请输入密码"
+                                style="margin-left: 6px"/><br/><br/>
+            <label id="ConfirmLabel">游客登录<input type="checkbox" id="ConfirmVisitor" name="ConfirmVisitor"/></label>
+            <a id="ForgetPassword" href="">忘记密码?</a>
+        </fieldset>
+        <fieldset id="ActionBtn">
+            <button id="Submit" type="submit">登录</button>
+        </fieldset>
+        <fieldset id="RegisterBtn">
+            <button id="Register" type="button">注册</button>
+        </fieldset>
+    </form>
+</div>
+<div id="RegisterDiv">
+    <form id="RegisterForm" action="" method="post">
+        <h1>Register</h1>
+        <fieldset id="RegisterSet">
+            <label>用户名 <input id="RegisterUsername" class="Register" type="text"
+                              placeholder="要求大于6位小于15位"/></label><br/><br/>
+            <label style="margin-left: 6px">密&nbsp&nbsp码 <input id="RegisterPassword" class="Register" type="Password"
+                                                                placeholder="要求大于6位小于15位"/></label><br/><br/>
+            <label style="margin-right: 17px">重复密码 <input id="RePassword" class="Register" type="password"
+                                                          placeholder="请与之前密码保持一致"/></label><br/><br/>
+            <label style="margin-right: 1px">E-mail <input id="Email" class="Register" type="text" placeholder="请输入邮箱"/></label><br/><br/>
+            <label style="margin-right: 1px">邀请码 <input id="InvitationCode" class="Register"
+                                                        placeholder="请输入邀请码"/></label><br/><br/>
+        </fieldset>
+        <fieldset id="FinishRegisterSet">
+            <button id="FinishRegisterBtn" type="submit">完成</button>
+        </fieldset>
+        <fieldset id="ReturnLoginSet">
+            <button id="ReturnLoginBtn" type="button">返回</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
